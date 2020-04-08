@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'svtter'
 SITENAME = 'daily machine learning'
-SITEURL = ''
+SITEURL = 'https://svtter.cn/daily-ml'
 
 PATH = 'content'
 
