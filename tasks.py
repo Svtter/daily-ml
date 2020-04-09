@@ -137,9 +137,12 @@ def post(c):
     title = f'Title: {name}'
     date = arrow.now().format('YYYY-MM-DD')
     datetime = f"Date: {arrow.now().format('YYYY-MM-DD HH:mm')}"
+    category = f"Category: Review"
 
     with open(f'content/{date}-{name}.md', 'w') as f:
         f.writelines(title)
+        f.writelines('\n')
+        f.writelines(datetime)
         f.writelines('\n')
         f.writelines(datetime)
         f.writelines(4*'\n')
