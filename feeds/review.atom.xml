@@ -2,20 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-13T23:21:00+08:00</updated><entry><title>Problems-2</title><link href="https://svtter.cn/daily-ml/problems-2.html" rel="alternate"></link><published>2020-04-13T23:21:00+08:00</published><updated>2020-04-13T23:21:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-13:/daily-ml/problems-2.html</id><summary type="html">&lt;!-- write your content here. --&gt;
 
 &lt;ol&gt;
-&lt;li&gt;我们能够看见连续序列&lt;span class="math"&gt;\((x_i,y_i)\)&lt;/span&gt;，需要对&lt;span class="math"&gt;\(y_i\)&lt;/span&gt;进行估计，这一般称之为在线学习（online learning)。&lt;/li&gt;
-&lt;li&gt;集合&lt;span class="math"&gt;\(X:=\{x_1,...,x_m\}\)&lt;/span&gt;与集合&lt;span class="math"&gt;\(Y:=\{y_1,...,y_m\}\)&lt;/span&gt;，&lt;span class="math"&gt;\((x_i, y_i)\)&lt;/span&gt;成对，需要预测&lt;span class="math"&gt;\(y\)&lt;/span&gt;，这个&lt;span class="math"&gt;\(y\)&lt;/span&gt;与从未见过的序列&lt;span class="math"&gt;\(X':=\{x'_i, ..., x'_m\}\)&lt;/span&gt;成对。这一般称之为批学习（batch learning）。注意：batch 经常被翻译为“批”，计算机术语中的“批”往往都是有关联的。&lt;/li&gt;
-&lt;li&gt;我们可能在构建模型的时候就能见到&lt;span class="math"&gt;\(X'\)&lt;/span&gt;，这称之为&lt;code&gt;transduction&lt;/code&gt;（转导）。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;明日再说。&lt;/p&gt;
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var …&lt;/script&gt;</summary><content type="html">&lt;!-- write your content here. --&gt;
+&lt;li&gt;我们能够看见连续序列:math:&lt;code&gt;(x_i,y_i)&lt;/code&gt;，需要对&lt;span class="math"&gt;\(y_i\)&lt;/span&gt;进行估计，这一般称之为在线学习（online learning)。&lt;/li&gt;
+&lt;li&gt;集合:math:&lt;code&gt;X:=\{x_1,...,x_m\}&lt;/code&gt;与集合:math:&lt;code&gt;Y:=\{y_1,...,y_m\}&lt;/code&gt;，:math:&lt;code&gt;(x_i, y_i)&lt;/code&gt;成对，需要预测:math:&lt;code&gt;y&lt;/code&gt;，这个:math:&lt;code&gt;y&lt;/code&gt;与从未见过的序列:math:&lt;code&gt;X':=\{x'_i, ..., x'_m\}&lt;/code&gt;成对。这一般称之为批学习（batch learning）。注意：batch 经常被翻译为“批”，计算机术语中的“批”往往都是有关联的。&lt;/li&gt;
+&lt;li&gt;我们可能在构建模型的时候就能见到:math:&lt;code&gt;X'&lt;/code&gt;，这称之为 …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;!-- write your content here. --&gt;
 
 &lt;ol&gt;
-&lt;li&gt;我们能够看见连续序列&lt;span class="math"&gt;\((x_i,y_i)\)&lt;/span&gt;，需要对&lt;span class="math"&gt;\(y_i\)&lt;/span&gt;进行估计，这一般称之为在线学习（online learning)。&lt;/li&gt;
-&lt;li&gt;集合&lt;span class="math"&gt;\(X:=\{x_1,...,x_m\}\)&lt;/span&gt;与集合&lt;span class="math"&gt;\(Y:=\{y_1,...,y_m\}\)&lt;/span&gt;，&lt;span class="math"&gt;\((x_i, y_i)\)&lt;/span&gt;成对，需要预测&lt;span class="math"&gt;\(y\)&lt;/span&gt;，这个&lt;span class="math"&gt;\(y\)&lt;/span&gt;与从未见过的序列&lt;span class="math"&gt;\(X':=\{x'_i, ..., x'_m\}\)&lt;/span&gt;成对。这一般称之为批学习（batch learning）。注意：batch 经常被翻译为“批”，计算机术语中的“批”往往都是有关联的。&lt;/li&gt;
-&lt;li&gt;我们可能在构建模型的时候就能见到&lt;span class="math"&gt;\(X'\)&lt;/span&gt;，这称之为&lt;code&gt;transduction&lt;/code&gt;（转导）。&lt;/li&gt;
+&lt;li&gt;我们能够看见连续序列:math:&lt;code&gt;(x_i,y_i)&lt;/code&gt;，需要对&lt;span class="math"&gt;\(y_i\)&lt;/span&gt;进行估计，这一般称之为在线学习（online learning)。&lt;/li&gt;
+&lt;li&gt;集合:math:&lt;code&gt;X:=\{x_1,...,x_m\}&lt;/code&gt;与集合:math:&lt;code&gt;Y:=\{y_1,...,y_m\}&lt;/code&gt;，:math:&lt;code&gt;(x_i, y_i)&lt;/code&gt;成对，需要预测:math:&lt;code&gt;y&lt;/code&gt;，这个:math:&lt;code&gt;y&lt;/code&gt;与从未见过的序列:math:&lt;code&gt;X':=\{x'_i, ..., x'_m\}&lt;/code&gt;成对。这一般称之为批学习（batch learning）。注意：batch 经常被翻译为“批”，计算机术语中的“批”往往都是有关联的。&lt;/li&gt;
+&lt;li&gt;我们可能在构建模型的时候就能见到:math:&lt;code&gt;X'&lt;/code&gt;，这称之为&lt;code&gt;transduction&lt;/code&gt;（转导）。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;明日再说。&lt;/p&gt;
+&lt;!-- 明日再说。 --&gt;
+
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
