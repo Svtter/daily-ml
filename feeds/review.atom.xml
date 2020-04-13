@@ -1,12 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-13T23:21:00+08:00</updated><entry><title>Problems-2</title><link href="https://svtter.cn/daily-ml/problems-2.html" rel="alternate"></link><published>2020-04-13T23:21:00+08:00</published><updated>2020-04-13T23:21:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-13:/daily-ml/problems-2.html</id><content type="html">&lt;!-- write your content here. --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-13T23:21:00+08:00</updated><entry><title>Problems-2</title><link href="https://svtter.cn/daily-ml/problems-2.html" rel="alternate"></link><published>2020-04-13T23:21:00+08:00</published><updated>2020-04-13T23:21:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-13:/daily-ml/problems-2.html</id><summary type="html">&lt;!-- write your content here. --&gt;
 
 &lt;ol&gt;
-&lt;li&gt;我们能够看见连续序列$(x_i,y_i)$，需要对$y_i$进行估计，这一般称之为在线学习（online learning)。&lt;/li&gt;
-&lt;li&gt;集合$X:={x_1,...,x_m}$与集合$Y:={y_1,...,y_m}$，$(x_i, y_i)$成对，需要预测$y$，这个$y$与从未见过的序列$X':={x'_i, ..., x'_m}$成对。这一般称之为批学习（batch learning）。注意：batch 经常被翻译为“批”，计算机术语中的“批”往往都是有关联的。&lt;/li&gt;
-&lt;li&gt;我们可能在构建模型的时候就能见到$X'$，这称之为&lt;code&gt;transduction&lt;/code&gt;（转导）。&lt;/li&gt;
+&lt;li&gt;我们能够看见连续序列&lt;span class="math"&gt;\((x_i,y_i)\)&lt;/span&gt;，需要对&lt;span class="math"&gt;\(y_i\)&lt;/span&gt;进行估计，这一般称之为在线学习（online learning)。&lt;/li&gt;
+&lt;li&gt;集合&lt;span class="math"&gt;\(X:=\{x_1,...,x_m\}\)&lt;/span&gt;与集合&lt;span class="math"&gt;\(Y:=\{y_1,...,y_m\}\)&lt;/span&gt;，&lt;span class="math"&gt;\((x_i, y_i)\)&lt;/span&gt;成对，需要预测&lt;span class="math"&gt;\(y\)&lt;/span&gt;，这个&lt;span class="math"&gt;\(y\)&lt;/span&gt;与从未见过的序列&lt;span class="math"&gt;\(X':=\{x'_i, ..., x'_m\}\)&lt;/span&gt;成对。这一般称之为批学习（batch learning）。注意：batch 经常被翻译为“批”，计算机术语中的“批”往往都是有关联的。&lt;/li&gt;
+&lt;li&gt;我们可能在构建模型的时候就能见到&lt;span class="math"&gt;\(X'\)&lt;/span&gt;，这称之为&lt;code&gt;transduction&lt;/code&gt;（转导）。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;明日再说。&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>Problems</title><link href="https://svtter.cn/daily-ml/problems.html" rel="alternate"></link><published>2020-04-12T22:25:00+08:00</published><updated>2020-04-12T22:25:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-12:/daily-ml/problems.html</id><content type="html">&lt;!-- write your content here. --&gt;
+&lt;p&gt;明日再说。&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var …&lt;/script&gt;</summary><content type="html">&lt;!-- write your content here. --&gt;
+
+&lt;ol&gt;
+&lt;li&gt;我们能够看见连续序列&lt;span class="math"&gt;\((x_i,y_i)\)&lt;/span&gt;，需要对&lt;span class="math"&gt;\(y_i\)&lt;/span&gt;进行估计，这一般称之为在线学习（online learning)。&lt;/li&gt;
+&lt;li&gt;集合&lt;span class="math"&gt;\(X:=\{x_1,...,x_m\}\)&lt;/span&gt;与集合&lt;span class="math"&gt;\(Y:=\{y_1,...,y_m\}\)&lt;/span&gt;，&lt;span class="math"&gt;\((x_i, y_i)\)&lt;/span&gt;成对，需要预测&lt;span class="math"&gt;\(y\)&lt;/span&gt;，这个&lt;span class="math"&gt;\(y\)&lt;/span&gt;与从未见过的序列&lt;span class="math"&gt;\(X':=\{x'_i, ..., x'_m\}\)&lt;/span&gt;成对。这一般称之为批学习（batch learning）。注意：batch 经常被翻译为“批”，计算机术语中的“批”往往都是有关联的。&lt;/li&gt;
+&lt;li&gt;我们可能在构建模型的时候就能见到&lt;span class="math"&gt;\(X'\)&lt;/span&gt;，这称之为&lt;code&gt;transduction&lt;/code&gt;（转导）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;明日再说。&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Review"></category></entry><entry><title>Problems</title><link href="https://svtter.cn/daily-ml/problems.html" rel="alternate"></link><published>2020-04-12T22:25:00+08:00</published><updated>2020-04-12T22:25:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-12:/daily-ml/problems.html</id><content type="html">&lt;!-- write your content here. --&gt;
 
 &lt;p&gt;二分类问题是一个被研究最多的问题之一。
 比较常见有：邮件是否是垃圾邮件，一个水果是苹果还是橘子。&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>Data</title><link href="https://svtter.cn/daily-ml/data.html" rel="alternate"></link><published>2020-04-11T15:31:00+08:00</published><updated>2020-04-11T15:31:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-11:/daily-ml/data.html</id><content type="html">&lt;p&gt;机器学习中的数据可能有各种形式，包括向量，列表，集合，矩阵，图像（也可以认为是一种矩阵），
