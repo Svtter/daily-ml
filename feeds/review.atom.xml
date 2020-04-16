@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-14T10:14:00+08:00</updated><entry><title>Problems-3</title><link href="https://svtter.cn/daily-ml/problems-3.html" rel="alternate"></link><published>2020-04-14T10:14:00+08:00</published><updated>2020-04-14T10:14:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-14:/daily-ml/problems-3.html</id><summary type="html">&lt;ul&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-15T08:40:00+08:00</updated><entry><title>multiclass-classification</title><link href="https://svtter.cn/daily-ml/multiclass-classification.html" rel="alternate"></link><published>2020-04-15T08:40:00+08:00</published><updated>2020-04-15T08:40:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-15:/daily-ml/multiclass-classification.html</id><summary type="html">&lt;p&gt;多分类问题是二分类问题的一个逻辑拓展。
+主要的区别是，&lt;span class="math"&gt;\(y\in\{1,...,n\}\)&lt;/span&gt;，y取值于一个范围。
+例如，我们可能需要对一个文档所用的语种进行分类，这个分类包含英语，法语，德语，中文等等。&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript …&lt;/script&gt;</summary><content type="html">&lt;p&gt;多分类问题是二分类问题的一个逻辑拓展。
+主要的区别是，&lt;span class="math"&gt;\(y\in\{1,...,n\}\)&lt;/span&gt;，y取值于一个范围。
+例如，我们可能需要对一个文档所用的语种进行分类，这个分类包含英语，法语，德语，中文等等。&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Review"></category><category term="Problem"></category></entry><entry><title>Problems-3</title><link href="https://svtter.cn/daily-ml/problems-3.html" rel="alternate"></link><published>2020-04-14T10:14:00+08:00</published><updated>2020-04-14T10:14:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-14:/daily-ml/problems-3.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;当我们允许选择一部分&lt;span class="math"&gt;\(X\)&lt;/span&gt;来构建模型时，这称之为主动学习。&lt;/li&gt;
 &lt;li&gt;我们可能没法办法得到全部的&lt;span class="math"&gt;\(X\)&lt;/span&gt;的数据，有些数值可能是缺失的。这导致了数据估计的缺失问题。&lt;/li&gt;
 &lt;li&gt;数据&lt;span class="math"&gt;\(X\)&lt;/span&gt;和数据&lt;span class="math"&gt;\(X'\)&lt;/span&gt;可能来自不同的数据源，这导致了 covariate shift correction 问题&lt;/li&gt;
