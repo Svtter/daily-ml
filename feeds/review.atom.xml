@@ -1,5 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-16T19:49:00+08:00</updated><entry><title>structure_estimation</title><link href="https://svtter.cn/daily-ml/structure_estimation.html" rel="alternate"></link><published>2020-04-16T19:49:00+08:00</published><updated>2020-04-16T19:49:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-16:/daily-ml/structure_estimation.html</id><summary type="html">&lt;p&gt;Structured Estimation 主要描述如何对&lt;span class="math"&gt;\(y\)&lt;/span&gt;进行合适的设计。
+<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-17T11:07:00+08:00</updated><entry><title>regression</title><link href="https://svtter.cn/daily-ml/regression.html" rel="alternate"></link><published>2020-04-17T11:07:00+08:00</published><updated>2020-04-17T11:07:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-17:/daily-ml/regression.html</id><summary type="html">&lt;!-- write your content here. --&gt;
+
+&lt;p&gt;&lt;strong&gt;Regression&lt;/strong&gt; （回归）问题是另一类经典问题。回归问题的目标是在给定&lt;span class="math"&gt;\(x\)&lt;/span&gt;的基础上，给出&lt;span class="math"&gt;\(y \in R\)&lt;/span&gt;的估计。
+一个例子是股票：股票每天的股价都是不一样的，我们希望得到股票的价格；运行员的心跳次数；加速器的数据等等。&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document …&lt;/script&gt;</summary><content type="html">&lt;!-- write your content here. --&gt;
+
+&lt;p&gt;&lt;strong&gt;Regression&lt;/strong&gt; （回归）问题是另一类经典问题。回归问题的目标是在给定&lt;span class="math"&gt;\(x\)&lt;/span&gt;的基础上，给出&lt;span class="math"&gt;\(y \in R\)&lt;/span&gt;的估计。
+一个例子是股票：股票每天的股价都是不一样的，我们希望得到股票的价格；运行员的心跳次数；加速器的数据等等。&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Review"></category></entry><entry><title>structure_estimation</title><link href="https://svtter.cn/daily-ml/structure_estimation.html" rel="alternate"></link><published>2020-04-16T19:49:00+08:00</published><updated>2020-04-16T19:49:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-16:/daily-ml/structure_estimation.html</id><summary type="html">&lt;p&gt;Structured Estimation 主要描述如何对&lt;span class="math"&gt;\(y\)&lt;/span&gt;进行合适的设计。
 在不同的背景下，&lt;span class="math"&gt;\(y\)&lt;/span&gt;所表达的意义是不同的。
 当对网页进行分类的时候，&lt;span class="math"&gt;\(y\)&lt;/span&gt;可能是本体（ontology）的一条路径；
 当尝试匹配对象的时候，&lt;span class="math"&gt;\(y\)&lt;/span&gt;可能是一个置换。&lt;/p&gt;
