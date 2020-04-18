@@ -148,7 +148,7 @@ def post(c):
         f.writelines('\n')
         f.writelines(category)
         f.writelines(4*'\n')
-        f.writelines('write your content here.')
+        f.writelines('<!-- write your content here. -->')
     
     print(f'{filename} created.')
     
