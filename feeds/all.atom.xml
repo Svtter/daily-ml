@@ -1,5 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/all.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-20T23:03:00+08:00</updated><entry><title>Independence</title><link href="https://svtter.cn/daily-ml/independence.html" rel="alternate"></link><published>2020-04-20T23:03:00+08:00</published><updated>2020-04-20T23:03:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-20:/daily-ml/independence.html</id><content type="html">&lt;!-- write your content here. --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/all.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-22T13:24:00+08:00</updated><entry><title>Mean-And-Variance</title><link href="https://svtter.cn/daily-ml/mean-and-variance.html" rel="alternate"></link><published>2020-04-22T13:24:00+08:00</published><updated>2020-04-22T13:24:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-22:/daily-ml/mean-and-variance.html</id><summary type="html">&lt;!-- write your content here. --&gt;
+
+&lt;p&gt;当我们需要衡量一个随机变量可能的数值的时候，例如测量一个电压的范围，
+我们就需要引入平均值和方差了。&lt;/p&gt;
+&lt;p&gt;平均值对于估计期望损失（expected losses）和收益（benefit）是非常有用的。常见的定义形式如下:&lt;/p&gt;
+&lt;div class="math"&gt;$$E[X] := \int xdp(x)$$&lt;/div&gt;
+&lt;p&gt;方差用于衡量变量与平均值之间的差异。因此，方差经常被用于评估随机变量的风险。方差的常见形式如下：&lt;/p&gt;
+&lt;div class="math"&gt;$$Var[X]:= E[(X-E[X])^2]$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent …&lt;/script&gt;</summary><content type="html">&lt;!-- write your content here. --&gt;
+
+&lt;p&gt;当我们需要衡量一个随机变量可能的数值的时候，例如测量一个电压的范围，
+我们就需要引入平均值和方差了。&lt;/p&gt;
+&lt;p&gt;平均值对于估计期望损失（expected losses）和收益（benefit）是非常有用的。常见的定义形式如下:&lt;/p&gt;
+&lt;div class="math"&gt;$$E[X] := \int xdp(x)$$&lt;/div&gt;
+&lt;p&gt;方差用于衡量变量与平均值之间的差异。因此，方差经常被用于评估随机变量的风险。方差的常见形式如下：&lt;/p&gt;
+&lt;div class="math"&gt;$$Var[X]:= E[(X-E[X])^2]$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Review"></category></entry><entry><title>Independence</title><link href="https://svtter.cn/daily-ml/independence.html" rel="alternate"></link><published>2020-04-20T23:03:00+08:00</published><updated>2020-04-20T23:03:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-20:/daily-ml/independence.html</id><content type="html">&lt;!-- write your content here. --&gt;
 
 &lt;p&gt;&lt;strong&gt;Independence&lt;/strong&gt; 独立性，是用于处理大量随机变量的重要工具。
 利用独立性，我们可以同时对大量的独立变量进行估计。&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>Probability Theory</title><link href="https://svtter.cn/daily-ml/probability-theory.html" rel="alternate"></link><published>2020-04-19T18:06:00+08:00</published><updated>2020-04-19T18:06:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-19:/daily-ml/probability-theory.html</id><content type="html">&lt;!-- write your content here. --&gt;
