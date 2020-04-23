@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/all.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-21T13:24:00+08:00</updated><entry><title>Mean-And-Variance</title><link href="https://svtter.cn/daily-ml/mean-and-variance.html" rel="alternate"></link><published>2020-04-21T13:24:00+08:00</published><updated>2020-04-21T13:24:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-21:/daily-ml/mean-and-variance.html</id><summary type="html">&lt;!-- write your content here. --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/all.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-22T10:40:00+08:00</updated><entry><title>iid</title><link href="https://svtter.cn/daily-ml/iid.html" rel="alternate"></link><published>2020-04-22T10:40:00+08:00</published><updated>2020-04-22T10:40:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-22:/daily-ml/iid.html</id><content type="html">&lt;!-- write your content here. --&gt;
+
+&lt;p&gt;从同一个设备中读取电压的数值，我们假设电压的数值取值于同一个分布，并且相互独立。
+这样一来，数值于数值之间不会相互影响，这一时刻的数值也不会影响下一时刻的数值。
+我们称这样的随机变量是独立同分布(independency and identically distributed)，或者iid.&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>Mean-And-Variance</title><link href="https://svtter.cn/daily-ml/mean-and-variance.html" rel="alternate"></link><published>2020-04-21T13:24:00+08:00</published><updated>2020-04-21T13:24:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-21:/daily-ml/mean-and-variance.html</id><summary type="html">&lt;!-- write your content here. --&gt;
 
 &lt;p&gt;当我们需要衡量一个随机变量可能的数值的时候，例如测量一个电压的范围，
 我们就需要引入平均值和方差了。&lt;/p&gt;
