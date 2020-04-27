@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-26T16:07:00+08:00</updated><entry><title>Basic-Algorithm</title><link href="https://svtter.cn/daily-ml/basic-algorithm.html" rel="alternate"></link><published>2020-04-26T16:07:00+08:00</published><updated>2020-04-26T16:07:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-26:/daily-ml/basic-algorithm.html</id><content type="html">&lt;!-- write your content here. --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-26T12:58:00+08:00</updated><entry><title>product-over-a-large-number</title><link href="https://svtter.cn/daily-ml/product-over-a-large-number.html" rel="alternate"></link><published>2020-04-26T12:58:00+08:00</published><updated>2020-04-26T12:58:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-26:/daily-ml/product-over-a-large-number.html</id><summary type="html">&lt;!-- write your content here. --&gt;
 
-&lt;p&gt;后面主要介绍四种基本的机器学习算法，分别是 Naive Bayes（朴素贝叶斯）, Nearest Neighbors（最近邻）, the Mean classifier, and Perceptron（感知机）.&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>conditionally-independent</title><link href="https://svtter.cn/daily-ml/conditionally-independent.html" rel="alternate"></link><published>2020-04-24T16:22:00+08:00</published><updated>2020-04-24T16:22:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-24:/daily-ml/conditionally-independent.html</id><summary type="html">&lt;!-- write your content here. --&gt;
-
-&lt;p&gt;条件独立的形式是：&lt;/p&gt;
-&lt;div class="math"&gt;$$ p(t_1,t_2|x) = p(t_1|x)p(t_2|x) $$&lt;/div&gt;
-&lt;p&gt;其中，&lt;span class="math"&gt;\(t_1\)&lt;/span&gt;和&lt;span class="math"&gt;\(t_2\)&lt;/span&gt;分别是两次 test（也就是检验）。&lt;/p&gt;
-&lt;p&gt;简写形式是&lt;/p&gt;
-&lt;div class="math"&gt;$$T_1,T_2\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}} X$$&lt;/div&gt;
+&lt;p&gt;当我们计算多个大数的乘积时，可能造成数值上溢或者下溢。
+此时，我们需要将数值的log值相加，而不是计算数值的乘积。
+这是因为：&lt;/p&gt;
+&lt;div class="math"&gt;$$ log(a) + log(b) = log(ab)$$&lt;/div&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -15,13 +12,101 @@
 
     if (false) {
         align = (screen.width &lt; 768) ? "left" : align;
-        indent …&lt;/script&gt;</summary><content type="html">&lt;!-- write your content here. --&gt;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id …&lt;/script&gt;</summary><content type="html">&lt;!-- write your content here. --&gt;
+
+&lt;p&gt;当我们计算多个大数的乘积时，可能造成数值上溢或者下溢。
+此时，我们需要将数值的log值相加，而不是计算数值的乘积。
+这是因为：&lt;/p&gt;
+&lt;div class="math"&gt;$$ log(a) + log(b) = log(ab)$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Review"></category></entry><entry><title>Basic-Algorithm</title><link href="https://svtter.cn/daily-ml/basic-algorithm.html" rel="alternate"></link><published>2020-04-25T16:07:00+08:00</published><updated>2020-04-25T16:07:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-25:/daily-ml/basic-algorithm.html</id><content type="html">&lt;!-- write your content here. --&gt;
+
+&lt;p&gt;后面主要介绍四种基本的机器学习算法，分别是 Naive Bayes（朴素贝叶斯）, Nearest Neighbors（最近邻）, the Mean classifier, and Perceptron（感知机）.&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>conditionally-independent</title><link href="https://svtter.cn/daily-ml/conditionally-independent.html" rel="alternate"></link><published>2020-04-24T16:22:00+08:00</published><updated>2020-04-24T16:22:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-24:/daily-ml/conditionally-independent.html</id><summary type="html">&lt;!-- write your content here. --&gt;
 
 &lt;p&gt;条件独立的形式是：&lt;/p&gt;
 &lt;div class="math"&gt;$$ p(t_1,t_2|x) = p(t_1|x)p(t_2|x) $$&lt;/div&gt;
 &lt;p&gt;其中，&lt;span class="math"&gt;\(t_1\)&lt;/span&gt;和&lt;span class="math"&gt;\(t_2\)&lt;/span&gt;分别是两次 test（也就是检验）。&lt;/p&gt;
 &lt;p&gt;简写形式是&lt;/p&gt;
-&lt;div class="math"&gt;$$T_1,T_2\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}} X$$&lt;/div&gt;
+&lt;div class="math"&gt;$$T_1,T_2\mathrel{$\perp\mkern-10mu\perp$} X$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em …&lt;/script&gt;</summary><content type="html">&lt;!-- write your content here. --&gt;
+
+&lt;p&gt;条件独立的形式是：&lt;/p&gt;
+&lt;div class="math"&gt;$$ p(t_1,t_2|x) = p(t_1|x)p(t_2|x) $$&lt;/div&gt;
+&lt;p&gt;其中，&lt;span class="math"&gt;\(t_1\)&lt;/span&gt;和&lt;span class="math"&gt;\(t_2\)&lt;/span&gt;分别是两次 test（也就是检验）。&lt;/p&gt;
+&lt;p&gt;简写形式是&lt;/p&gt;
+&lt;div class="math"&gt;$$T_1,T_2\mathrel{$\perp\mkern-10mu\perp$} X$$&lt;/div&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
