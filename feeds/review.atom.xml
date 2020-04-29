@@ -1,10 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-28T22:52:00+08:00</updated><entry><title>Laplace-smoothing</title><link href="https://svtter.cn/daily-ml/laplace-smoothing.html" rel="alternate"></link><published>2020-04-28T22:52:00+08:00</published><updated>2020-04-28T22:52:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-28:/daily-ml/laplace-smoothing.html</id><content type="html">&lt;!-- write your content here. --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>daily machine learning - Review</title><link href="https://svtter.cn/daily-ml/" rel="alternate"></link><link href="https://svtter.cn/daily-ml/feeds/review.atom.xml" rel="self"></link><id>https://svtter.cn/daily-ml/</id><updated>2020-04-28T22:52:00+08:00</updated><entry><title>Laplace-smoothing</title><link href="https://svtter.cn/daily-ml/laplace-smoothing.html" rel="alternate"></link><published>2020-04-28T22:52:00+08:00</published><updated>2020-04-28T22:52:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-28:/daily-ml/laplace-smoothing.html</id><summary type="html">&lt;!-- write your content here. --&gt;
 
 &lt;p&gt;拉普拉斯平滑，是一种用于处理0概率问题平滑方法。
 通过对每个分量+1来计算概率。
-例如，某个词语K，在不同类中的观测数量分别是0，10，20，概率为0，1/3，2/3，对这三个量
-进行laplace-smoothing后，结果应该是 1/(30+3), 11/(30+3), 21/(30+3)。&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>vectorial</title><link href="https://svtter.cn/daily-ml/vectorial.html" rel="alternate"></link><published>2020-04-27T22:43:00+08:00</published><updated>2020-04-27T22:43:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-27:/daily-ml/vectorial.html</id><content type="html">&lt;!-- write your content here. --&gt;
+例如，某个词语K，在不同类中的观测数量分别是0，10，20，概率为0，&lt;span class="math"&gt;\(\frac{1}{3}\)&lt;/span&gt;，&lt;span class="math"&gt;\(\frac{2}{3}\)&lt;/span&gt;，对这三个量
+进行laplace-smoothing后，结果应该是 &lt;span class="math"&gt;\(\frac{1}{30+3}\)&lt;/span&gt;, &lt;span class="math"&gt;\(\frac{11}{30+3}, $\frac{21}{30+3}\)&lt;/span&gt;。&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align …&lt;/script&gt;</summary><content type="html">&lt;!-- write your content here. --&gt;
+
+&lt;p&gt;拉普拉斯平滑，是一种用于处理0概率问题平滑方法。
+通过对每个分量+1来计算概率。
+例如，某个词语K，在不同类中的观测数量分别是0，10，20，概率为0，&lt;span class="math"&gt;\(\frac{1}{3}\)&lt;/span&gt;，&lt;span class="math"&gt;\(\frac{2}{3}\)&lt;/span&gt;，对这三个量
+进行laplace-smoothing后，结果应该是 &lt;span class="math"&gt;\(\frac{1}{30+3}\)&lt;/span&gt;, &lt;span class="math"&gt;\(\frac{11}{30+3}, $\frac{21}{30+3}\)&lt;/span&gt;。&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</content><category term="Review"></category></entry><entry><title>vectorial</title><link href="https://svtter.cn/daily-ml/vectorial.html" rel="alternate"></link><published>2020-04-27T22:43:00+08:00</published><updated>2020-04-27T22:43:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-27:/daily-ml/vectorial.html</id><content type="html">&lt;!-- write your content here. --&gt;
 
 &lt;p&gt;向量化是一个非常好的数据表示方式。一旦数据被向量化表示，
 我们就可以计算距离，相似度，以及其他通过向量表示所得到的统计值。&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>product-over-a-large-number</title><link href="https://svtter.cn/daily-ml/product-over-a-large-number.html" rel="alternate"></link><published>2020-04-26T12:58:00+08:00</published><updated>2020-04-26T12:58:00+08:00</updated><author><name>svtter</name></author><id>tag:svtter.cn,2020-04-26:/daily-ml/product-over-a-large-number.html</id><summary type="html">&lt;!-- write your content here. --&gt;
