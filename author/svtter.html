@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+        <meta charset="utf-8" />
+        <title>daily machine learning - svtter</title>
+        <link rel="stylesheet" href="https://svtter.cn/daily-ml/theme/css/main.css" />
+        <link href="https://svtter.cn/daily-ml/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="daily machine learning Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://svtter.cn/daily-ml/">daily machine learning</a></h1>
+                <nav><ul>
+                    <li><a href="https://svtter.cn/daily-ml/pages/about-me.html">About Me</a></li>
+                    <li><a href="https://svtter.cn/daily-ml/category/review.html">Review</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://svtter.cn/daily-ml/laplace-smoothing.html">Laplace-smoothing</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2020-04-28T22:52:00+08:00">
+                Published: 周二 28 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info --><!-- write your content here. -->
+
+<p>拉普拉斯平滑，是一种用于处理0概率问题平滑方法。
+通过对每个分量+1来计算概率。
+例如，某个词语K，在不同类中的观测数量分别是0，10，20，概率为0，1/3，2/3，对这三个量
+进行laplace-smoothing后，结果应该是 1/(30+3), 11/(30+3), 21/(30+3)。</p><p>There are <a href="https://svtter.cn/daily-ml/laplace-smoothing.html#disqus_thread">comments</a>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://svtter.cn/daily-ml/vectorial.html" rel="bookmark"
+                           title="Permalink to vectorial">vectorial</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-04-27T22:43:00+08:00">
+                Published: 周一 27 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info -->                <!-- write your content here. -->
+
+<p>向量化是一个非常好的数据表示方式。一旦数据被向量化表示，
+我们就可以计算距离，相似度，以及其他通过向量表示所得到的统计值。</p>
+                <a class="readmore" href="https://svtter.cn/daily-ml/vectorial.html">read more</a>
+<p>There are <a href="https://svtter.cn/daily-ml/vectorial.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://svtter.cn/daily-ml/product-over-a-large-number.html" rel="bookmark"
+                           title="Permalink to product-over-a-large-number">product-over-a-large-number</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-04-26T12:58:00+08:00">
+                Published: 周日 26 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info -->                <!-- write your content here. -->
+
+<p>当我们计算多个大数的乘积时，可能造成数值上溢或者下溢。
+此时，我们需要将数值的log值相加，而不是计算数值的乘积。
+这是因为：</p>
+<div class="math">$$ log(a) + log(b) = log(ab)$$</div>
+<p>这种计算，常见于条件概率形成的乘积链条。</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script' …</script>
+                <a class="readmore" href="https://svtter.cn/daily-ml/product-over-a-large-number.html">read more</a>
+<p>There are <a href="https://svtter.cn/daily-ml/product-over-a-large-number.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://svtter.cn/daily-ml/basic-algorithm.html" rel="bookmark"
+                           title="Permalink to Basic-Algorithm">Basic-Algorithm</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-04-25T16:07:00+08:00">
+                Published: 周六 25 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info -->                <!-- write your content here. -->
+
+<p>后面主要介绍四种基本的机器学习算法，分别是 Naive Bayes（朴素贝叶斯）, Nearest Neighbors（最近邻）, the Mean classifier, and Perceptron（感知机）.</p>
+                <a class="readmore" href="https://svtter.cn/daily-ml/basic-algorithm.html">read more</a>
+<p>There are <a href="https://svtter.cn/daily-ml/basic-algorithm.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://svtter.cn/daily-ml/conditionally-independent.html" rel="bookmark"
+                           title="Permalink to conditionally-independent">conditionally-independent</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-04-24T16:22:00+08:00">
+                Published: 周五 24 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info -->                <!-- write your content here. -->
+
+<p>条件独立的形式是：</p>
+<div class="math">$$ p(t_1,t_2|x) = p(t_1|x)p(t_2|x) $$</div>
+<p>其中，<span class="math">\(t_1\)</span>和<span class="math">\(t_2\)</span>分别是两次 test（也就是检验）。</p>
+<p>简写形式是</p>
+<div class="math">$$T_1,T_2\mathrel{$\perp\mkern-10mu\perp$} X$$</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em …</script>
+                <a class="readmore" href="https://svtter.cn/daily-ml/conditionally-independent.html">read more</a>
+<p>There are <a href="https://svtter.cn/daily-ml/conditionally-independent.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://svtter.cn/daily-ml/bayes-rule.html" rel="bookmark"
+                           title="Permalink to bayes-rule">bayes-rule</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-04-23T23:08:00+08:00">
+                Published: 周四 23 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info -->                <!-- write your content here. -->
+
+<p>贝叶斯法则的关键，是将两个变量的条件进行反转。</p>
+<div class="math">$$ p(y|x) = \frac{p(x|y)p(y)}{p(x)} $$</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript …</script>
+                <a class="readmore" href="https://svtter.cn/daily-ml/bayes-rule.html">read more</a>
+<p>There are <a href="https://svtter.cn/daily-ml/bayes-rule.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://svtter.cn/daily-ml/iid-du-li-tong-fen-bu.html" rel="bookmark"
+                           title="Permalink to iid-独立同分布">iid-独立同分布</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-04-22T10:40:00+08:00">
+                Published: 周三 22 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info -->                <!-- write your content here. -->
+
+<p>从同一个设备中读取电压的数值，我们假设电压的数值取值于同一个分布，并且相互独立。
+这样一来，数值于数值之间不会相互影响，这一时刻的数值也不会影响下一时刻的数值。
+我们称这样的随机变量是独立同分布(independency and identically distributed)，或者iid.</p>
+                <a class="readmore" href="https://svtter.cn/daily-ml/iid-du-li-tong-fen-bu.html">read more</a>
+<p>There are <a href="https://svtter.cn/daily-ml/iid-du-li-tong-fen-bu.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://svtter.cn/daily-ml/mean-and-variance.html" rel="bookmark"
+                           title="Permalink to Mean-And-Variance">Mean-And-Variance</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-04-21T13:24:00+08:00">
+                Published: 周二 21 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info -->                <!-- write your content here. -->
+
+<p>当我们需要衡量一个随机变量可能的数值的时候，例如测量一个电压的范围，
+我们就需要引入平均值和方差了。</p>
+<p>平均值对于估计期望损失（expected losses）和收益（benefit）是非常有用的。常见的定义形式如下:</p>
+<div class="math">$$E[X] := \int xdp(x)$$</div>
+<p>方差用于衡量变量与平均值之间的差异。因此，方差经常被用于评估随机变量的风险。方差的常见形式如下：</p>
+<div class="math">$$Var[X]:= E[(X-E[X])^2]$$</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent …</script>
+                <a class="readmore" href="https://svtter.cn/daily-ml/mean-and-variance.html">read more</a>
+<p>There are <a href="https://svtter.cn/daily-ml/mean-and-variance.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://svtter.cn/daily-ml/independence.html" rel="bookmark"
+                           title="Permalink to Independence">Independence</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-04-20T23:03:00+08:00">
+                Published: 周一 20 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info -->                <!-- write your content here. -->
+
+<p><strong>Independence</strong> 独立性，是用于处理大量随机变量的重要工具。
+利用独立性，我们可以同时对大量的独立变量进行估计。</p>
+                <a class="readmore" href="https://svtter.cn/daily-ml/independence.html">read more</a>
+<p>There are <a href="https://svtter.cn/daily-ml/independence.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="https://svtter.cn/daily-ml/probability-theory.html" rel="bookmark"
+                           title="Permalink to Probability Theory">Probability Theory</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2020-04-19T18:06:00+08:00">
+                Published: 周日 19 四月 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+        </address>
+<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+
+</footer><!-- /.post-info -->                <!-- write your content here. -->
+
+<p>为了能够更明确的表达机器学习的问题，人们引了概率论。</p>
+                <a class="readmore" href="https://svtter.cn/daily-ml/probability-theory.html">read more</a>
+<p>There are <a href="https://svtter.cn/daily-ml/probability-theory.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+    Page 1 / 3
+        <a href="https://svtter.cn/daily-ml/author/svtter2.html">&raquo;</a>
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://svtter.cn/">Blog site</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="https://svtter.cn/daily-ml/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://github.com/svtter">Github</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90439158-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'svtter-cn';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
