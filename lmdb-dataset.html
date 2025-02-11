@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="zh_cn">
-<head>
-        <meta charset="utf-8" />
-        <title>lmdb-dataset</title>
-        <link rel="stylesheet" href="https://svtter.cn/daily-ml/theme/css/main.css" />
-        <link href="https://svtter.cn/daily-ml/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="daily machine learning Atom Feed" />
-</head>
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>lmdb-dataset</title>
+                        <link rel="stylesheet" href="https://svtter.cn/daily-ml/theme/css/main.css" />
+                                <link href="https://svtter.cn/daily-ml/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="daily machine learning Atom Feed" />
+    <meta name="description" content="时隔多年再次更新这个 blog。 LMDB means lightning memory-mapped databases (LMDBs)。 An LMDB dataset can be used to train Caffe models. 使用 LMDB 可以较快的提升训练速度。我之前也构建过类似 …" />
+        </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://svtter.cn/daily-ml/">daily machine learning</a></h1>
-                <nav><ul>
-                    <li><a href="https://svtter.cn/daily-ml/pages/about-me.html">About Me</a></li>
-                    <li class="active"><a href="https://svtter.cn/daily-ml/category/review.html">Review</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="https://svtter.cn/daily-ml/lmdb-dataset.html" rel="bookmark"
-           title="Permalink to lmdb-dataset">lmdb-dataset</a></h1>
-    </header>
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="https://svtter.cn/daily-ml/">daily machine learning</a></h1>
+                        <nav><ul>
+                                                <li><a href="https://svtter.cn/daily-ml/pages/about-me.html">About Me</a></li>
+                                                <li class="active"><a href="https://svtter.cn/daily-ml/category/review.html">Review</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="https://svtter.cn/daily-ml/lmdb-dataset.html" rel="bookmark"
+             title="Permalink to lmdb-dataset">lmdb-dataset</a></h1>
+      </header>
 
-    <div class="entry-content">
+      <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2025-02-11T14:55:00+08:00">
                 Published: Tue 11 February 2025
         </abbr>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
-        </address>
-<p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
-
-</footer><!-- /.post-info -->      <!-- write your content here. -->
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="https://svtter.cn/daily-ml/author/svtter.html">svtter</a>
+                </address>
+        <p>In <a href="https://svtter.cn/daily-ml/category/review.html">Review</a>.</p>
+        
+</footer><!-- /.post-info -->        <!-- write your content here. -->
 
 <blockquote>
 <p>时隔多年再次更新这个 blog。</p>
@@ -43,69 +46,60 @@
 <p>使用 LMDB 可以较快的提升训练速度。我之前也构建过类似的 LMDB dataset。</p>
 <p>不过这种数据集没有具体的格式要求。也就是说，你可以按照你想要的方式处理 data shape.</p>
 <p>lmdb 一般用 <code>lmdb</code> python 包来做管理，通过 <code>pip install lmdb</code> 进行安装。</p>
-    </div><!-- /.entry-content -->
-    <div class="comments">
-      <h2>Comments !</h2>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        var disqus_shortname = 'svtter-cn';
-        var disqus_identifier = 'lmdb-dataset.html';
-        var disqus_url = 'https://svtter.cn/daily-ml/lmdb-dataset.html';
-        (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//svtter-cn.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the comments.</noscript>
-    </div>
+      </div><!-- /.entry-content -->
+        <div class="comments">
+          <h2>Comments !</h2>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            var disqus_shortname = 'svtter-cn';
+            var disqus_identifier = 'lmdb-dataset.html';
+            var disqus_url = 'https://svtter.cn/daily-ml/lmdb-dataset.html';
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//svtter-cn.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://svtter.cn/">Blog site</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://svtter.cn/daily-ml/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="http://svtter.cn/">Blog site</a></li>
+                                                        <li><a href="http://python.org/">Python.org</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+                                                        <li><a href="https://svtter.cn/daily-ml/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-                            <li><a href="https://github.com/svtter">Github</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+                                                        <li><a href="https://github.com/svtter">Github</a></li>
+                                                        <li><a href="#">Another social link</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
 
     <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-90439158-1', 'auto');
-    ga('send', 'pageview');
+        var disqus_shortname = 'svtter-cn';
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
     </script>
-<script type="text/javascript">
-    var disqus_shortname = 'svtter-cn';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-</body>
+        </body>
 </html>
